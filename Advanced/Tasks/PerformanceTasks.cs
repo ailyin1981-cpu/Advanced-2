@@ -7,7 +7,7 @@ public class PerformanceTasks
     /// </summary>
     public void ReverseArray<T>(T[] array)
     {
-        throw new NotImplementedException();
+        array.AsSpan().Reverse();
     }
 
     /// <summary>
@@ -15,7 +15,10 @@ public class PerformanceTasks
     /// </summary>
     public int SumArray(Span<int> span)
     {
-        throw new NotImplementedException();
+        int result = 0;
+        foreach (int i in span)
+            result += i;
+        return result;
     }
 
     /// <summary>
@@ -23,11 +26,11 @@ public class PerformanceTasks
     /// </summary>
     public object BoxValue(int value)
     {
-        throw new NotImplementedException();
+        return value;
     }
 
     public int UnboxValue(object value)
     {
-        throw new NotImplementedException();
+        return (int)value;
     }
 }

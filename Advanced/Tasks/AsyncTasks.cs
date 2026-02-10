@@ -6,42 +6,57 @@ public class AsyncTasks
     /// Задание 2.1: Напишите асинхронный метод, который имитирует загрузку данных.
     /// Используйте Task.Delay для имитации задержки.
     /// </summary>
-    public Task<string> LoadDataAsync()
+    public async Task <string> LoadDataAsync()
     {
-        throw new NotImplementedException();
+        await Task.Delay(1000);
+        return "Data loaded";
     }
 
     /// <summary>
     /// Задание 2.2: Напишите асинхронный метод, который загружает данные с тайм-аутом.
     /// Если операция превышает timeout, бросает TimeoutException.
     /// </summary>
-    public Task<string> LoadDataWithTimeoutAsync(TimeSpan timeout)
+    public async Task<string> LoadDataWithTimeoutAsync(TimeSpan timeout)
     {
-        throw new NotImplementedException();
+        using var canceltimeout = new CancellationTokenSource(timeout);
+        try
+        {
+            return await LoadDataWithCancellationAsync(canceltimeout.Token);
+        }
+        catch (OperationCanceledException) when (canceltimeout.Token.IsCancellationRequested)
+        {
+            throw new TimeoutException("Timeout");
+        }
+
     }
 
     /// <summary>
     /// Задание 2.3: Напишите метод, который выполняет несколько асинхронных операций параллельно
     /// и возвращает результат, когда все завершатся.
     /// </summary>
-    public Task<string[]> ExecuteParallelAsync(IEnumerable<Task<string>> tasks)
+    public async Task<string[]> ExecuteParallelAsync(IEnumerable<Task<string>> tasks)
     {
-        throw new NotImplementedException();
+        return await Task.WhenAll(tasks);
     }
 
     /// <summary>
     /// Задание 2.4: Напишите метод, который поддерживает отмену операции через CancellationToken.
     /// </summary>
-    public Task<string> LoadDataWithCancellationAsync(CancellationToken cancellationToken)
+    public async Task<string> LoadDataWithCancellationAsync(CancellationToken cancellationToken)
     {
-        throw new NotImplementedException();
+        await Task.Delay(5000, cancellationToken);
+
+        cancellationToken.ThrowIfCancellationRequested();
+
+        return "Data loaded";
     }
 
     /// <summary>
     /// Задание 2.5: Напишите метод, который использует ConfigureAwait(false) для избежания deadlock.
     /// </summary>
-    public Task<string> LoadDataConfigureAwaitAsync()
+    public async Task<string> LoadDataConfigureAwaitAsync()
     {
-        throw new NotImplementedException();
+        await Task.Delay(5000).ConfigureAwait(false);
+        return "Data loaded";
     }
 }
