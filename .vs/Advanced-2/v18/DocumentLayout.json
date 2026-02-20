@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{66054DD9-92D8-43C4-A8E3-3BF6E8C8A023}|Advanced\\Advanced.csproj|c:\\users\\dell\\source\\repos\\advanced-2\\advanced\\tasks\\languagepatterns\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66054DD9-92D8-43C4-A8E3-3BF6E8C8A023}|Advanced\\Advanced.csproj|solutionrelative:advanced\\tasks\\languagepatterns\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66054DD9-92D8-43C4-A8E3-3BF6E8C8A023}|Advanced\\Advanced.csproj|c:\\users\\dell\\source\\repos\\advanced-2\\advanced\\tasks\\languagepatterns\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66054DD9-92D8-43C4-A8E3-3BF6E8C8A023}|Advanced\\Advanced.csproj|solutionrelative:advanced\\tasks\\languagepatterns\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66054DD9-92D8-43C4-A8E3-3BF6E8C8A023}|Advanced\\Advanced.csproj|c:\\users\\dell\\source\\repos\\advanced-2\\advanced\\tasks\\genericstasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66054DD9-92D8-43C4-A8E3-3BF6E8C8A023}|Advanced\\Advanced.csproj|solutionrelative:advanced\\tasks\\genericstasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13271E6F-DAB2-43C3-AA9A-08313983EB1E}|Advanced.Tests\\Advanced.Tests.csproj|c:\\users\\dell\\source\\repos\\advanced-2\\advanced.tests\\tasks\\genericstaskstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13271E6F-DAB2-43C3-AA9A-08313983EB1E}|Advanced.Tests\\Advanced.Tests.csproj|solutionrelative:advanced.tests\\tasks\\genericstaskstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,6 +47,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced\\Tasks\\LanguagePatterns\\Product.cs",
+              "RelativeDocumentMoniker": "Advanced\\Tasks\\LanguagePatterns\\Product.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced\\Tasks\\LanguagePatterns\\Product.cs",
+              "RelativeToolTip": "Advanced\\Tasks\\LanguagePatterns\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T02:48:16.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced\\Tasks\\LanguagePatterns\\Person.cs",
+              "RelativeDocumentMoniker": "Advanced\\Tasks\\LanguagePatterns\\Person.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced\\Tasks\\LanguagePatterns\\Person.cs*",
+              "RelativeToolTip": "Advanced\\Tasks\\LanguagePatterns\\Person.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T02:46:40.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GenericsTasksTests.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced.Tests\\Tasks\\GenericsTasksTests.cs",
+              "RelativeDocumentMoniker": "Advanced.Tests\\Tasks\\GenericsTasksTests.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced.Tests\\Tasks\\GenericsTasksTests.cs",
+              "RelativeToolTip": "Advanced.Tests\\Tasks\\GenericsTasksTests.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T02:45:09.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GenericsTasks.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced\\Tasks\\GenericsTasks.cs",
+              "RelativeDocumentMoniker": "Advanced\\Tasks\\GenericsTasks.cs",
+              "ToolTip": "C:\\Users\\Dell\\source\\repos\\Advanced-2\\Advanced\\Tasks\\GenericsTasks.cs",
+              "RelativeToolTip": "Advanced\\Tasks\\GenericsTasks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T02:44:43.806Z",
+              "EditorCaption": ""
             }
           ]
         }
