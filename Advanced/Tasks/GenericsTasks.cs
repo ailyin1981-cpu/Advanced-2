@@ -10,7 +10,7 @@ public class GenericsTasks
     /// Если коллекция пустая, возвращает default значение типа.
     /// В каждом задании используйте async/await.
     /// </summary>
-    public static async Task <T> GetFirstElement<T>(IEnumerable<T> collection)
+    public static async Task <T?> GetFirstElement<T>(IEnumerable<T> collection)
     {
         ArgumentNullException.ThrowIfNull(collection);
         await Task.Yield();
